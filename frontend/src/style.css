@@ -1,0 +1,36 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  background: #f5f7fa;
+}
+
+/* 应用整体布局 */
+.app {
+  height: 100%;
+}
+
+/* 左侧栏 */
+.app .el-aside {
+  background: #fff;
+  border-right: 1px solid #ebeef5;
+  padding-top: 8px;
+}
+
+/* 主区域允许滚动 */
+.app .el-main {
+  overflow-y: auto;
+}
+
+/* 底部状态栏 */
+.app .el-footer {
+  background: #fff;
+  border-top: 1px solid #ebeef5;
+  display: flex;
+  align-items: center;
+}
