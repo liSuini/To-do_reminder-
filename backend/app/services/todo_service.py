@@ -64,6 +64,16 @@ def create_todo(data: dict) -> dict:
         session.close()
 
 
+def get_todo(todo_id: int) -> dict | None:
+    """按 id 直查单条（供详情端点，避免全表拉取）"""
+    session = _session_factory()
+    try:
+        todo = session.get(Todo, todo_id)
+        return _to_dict(todo) if todo else None
+    finally:
+        session.close()
+
+
 def update_todo(todo_id: int, data: dict) -> dict | None:
     session = _session_factory()
     try:
