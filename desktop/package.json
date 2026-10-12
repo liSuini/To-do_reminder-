@@ -1,0 +1,14 @@
+{
+  "name": "todo-reminder-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "待办助手桌面壳",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}
