@@ -31,3 +31,7 @@ Thumbs.db
 *.sqlite3
 .env
 .env.local
+backend/backend.port
+backend/frontend_dist/
+dist/
+release/
